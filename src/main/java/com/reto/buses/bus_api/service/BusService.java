@@ -22,8 +22,4 @@ public class BusService {
     public Optional<Bus> getBusById(Long id) {
         return busRepository.findById(id);
     }
-
-    public Bus saveBus(Bus bus) {
-        return busRepository.save(bus);
-    }
 }
