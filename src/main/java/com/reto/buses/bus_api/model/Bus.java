@@ -29,7 +29,18 @@ public class Bus {
     @Column(nullable = false)
     private boolean activo;
 
-    public Bus() {
+    public Bus() {}
+
+    public Bus(String numeroBus, String placa, String caracteristicas, Marca marca, boolean activo) {
+        this.numeroBus = numeroBus;
+        this.placa = placa;
+        this.caracteristicas = caracteristicas;
+        this.marca = marca;
+        this.activo = activo;
+    }
+
+    @PrePersist
+    protected void onCreate() {
         this.fechaCreacion = LocalDateTime.now();
     }
 
