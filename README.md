@@ -40,3 +40,4 @@ Por defecto, viene configurado un usuario y contraseña predeterminados, los cua
 
 <img width="371" height="56" alt="image" src="https://github.com/user-attachments/assets/2720dce5-5af2-4021-a083-b0794686857d" />
 
+Finalmente, el proyecto incluye un archivo **data.sql** que permite la carga automática de datos en las tablas, con el fin de facilitar la demostración y prueba de la aplicación.
